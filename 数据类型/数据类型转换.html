@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 转换为字符串类型
+        // 1. toString()
+        var num1 = 18;
+        var box1 = num1.toString();
+        console.log(typeof box1);
+
+        // 2. String()
+        var num2 = 18;
+        console.log(typeof String(num2));
+
+        // 3. +''   重点
+        var num3 = 10;
+        console.log(typeof (num3 + ''));
+
+        console.log('\n');
+
+        // 转换为数字型
+        // 1. parseInt()转换为整数      重点
+        var age = prompt('请输入年龄');
+        console.log(parseInt(age));
+        console.log(parseInt('3.14'));     // 去小数
+        console.log(parseInt('120px'));     //去单位
+        console.log(parseInt('abc120px'));  //NaN
+        
+        // 2. parseFloat()转换为浮点数  重点
+        console.log(parseInt('3.14'));     // 去小数
+        console.log(parseInt('120px'));     //去单位
+        console.log(parseInt('abc120px'));  //NaN
+
+        // 3. Number()
+        var str1 = '123';
+        console.log(Number(str1));      //123
+        console.log(Number('3.14'));    //3.14
+
+        // 4. 利用- * /的算术运算隐式转换
+        console.log('12' - 0);      // 12
+        console.log('123' * '2');   // 246
+        console.log('4' / 2);   //2
+
+        console.log('\n');
+
+        // 转换为布尔类型
+        // Boolean(),代表空和否定的都换转换成false,如'',0,null,NaN,undefined;其他都转换为true
+        console.log(Boolean(''));
+        console.log(Boolean(0));
+        console.log(Boolean(null));
+        console.log(Boolean(NaN));
+        console.log(Boolean(undefined));
+        console.log(Boolean(123));
+        console.log(Boolean('hello world'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

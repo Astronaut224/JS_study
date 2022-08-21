@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 前置自增运算符
+        var age = 10;
+        ++age;  // 效果类似于age = age + 1;
+        // 先自增,后返回值
+        var p = 10;
+        console.log(++p + 10);  // 21
+
+        // 后置自增运算符
+        var x = 10;
+        x++;    //前置自增和后置自增单独使用效果相同
+        // 先返回值,后自增
+        var y = 10;
+        console.log(y++ + 10);  // 20 , y=11
+
+        // 练习
+        var a = 10;         // a=10
+        ++a;                // a=11 ++a=11 , 先自增,后返回表达式的值
+        var b = ++a + 2;    // a=12 ++a=12
+        console.log(b);     // b=14
+
+        var c = 10;         
+        c++;                // c++=10 c=11 , 先返回表达式的值,后自增
+        var d = c++ + 2;    // c++=11 c=12
+        console.log(d);     // d=13
+
+        var e = 10;
+        var f = e++ + ++e;  // 1. e++=10 e=11 2. e=12 ++e=12
+        console.log(f);     // 22   
+
+        // 总结:前置自增一样;后置自增先表达式返回原值,后变量自增
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

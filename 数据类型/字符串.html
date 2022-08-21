@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 字符串引号就近原则
+        var str1 = '我是一个"高富帅"程序员'
+        var str2 = "我是一个'高富帅'程序员"
+        console.log(str1);
+        console.log(str2);
+
+        // 转义符'\'，  \n换行  \\斜杠  \t缩进  \b空格
+        var str3 = '我是一个高富帅\n程序员';
+        console.log(str3);
+
+        // 弹出网页警示框
+        var warning = '警告\n你已"学习"两小时，请适当放松。'
+        alert(warning)
+
+        // 检测获取字符串长度
+        var strMsg = 'hello world!';
+        console.log(strMsg.length);
+
+        // 字符串拼接+  字符串拼接任何类型得到的结果都是字符串
+        // +总结：数值相加，字符相连
+        console.log('沙漠' + '骆驼');
+        console.log('我的年龄是' + 18); // '我的年龄是18'
+        var age = 19;
+        console.log('明年就' + age + '岁了');
+        console.log('this is ' + true); // 'this is true'
+        console.log(12 + 12);  // 24
+        console.log('12' + 12);  //'1212'
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
