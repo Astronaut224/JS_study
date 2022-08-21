@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // switch语句也可以实现多选一
+        // 执行思路：条件表达式的值和不同case的value匹配，匹配上了就执行。
+        // switch (条件表达式) {
+        //     case value1:
+        //         执行语句1;
+        //         break;
+        //     case value2:
+        //         执行语句2;
+        //         break;
+        //     ...
+        //     default:
+        //         执行最后的语句;
+        // }
+        switch (2) {
+            case 1:
+                console.log('这是1');
+                break;
+            case 2:
+                console.log('这是2');
+                break;
+            default:
+                console.log('没匹配上');
+        }
+
+        // 注意事项
+        // 1. switch条件语句的值需要和case的值 全等 才能匹配，也就是值和数据类型完全一致
+        // 2. 如果case里没有break，执行完case不会退出switch，而是执行下一个case里的语句。
+
+        // 案例
+        fruit = prompt('请输入你想买的水果');
+        switch (fruit) {
+            case '苹果':
+                alert('3.5元/斤');
+                break;
+            case '香蕉':
+                alert('3元/斤');
+                break;
+            default:
+                alert('没有这种水果');
+                break;
+        }
+
+        // switch和if else if的区别
+        // 1. switch case通常处理比较确定值的情况（=）；if else if通常处理范围判断（<,>）
+        // 2. switch直接执行匹配的case，效率略微更高一些；if else是依次顺序执行
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

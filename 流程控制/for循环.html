@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // for循环
+        // 重复执行相同的代码
+        for (var i = 1; i <= 100; i++) {
+            console.log('老婆我错了');
+        }
+
+        // 重复执行不同的代码
+        var num = prompt("请输入年龄：");
+        for (var j = 1; j <= num; j++) {
+            if (j == 1) {
+                console.log('这个人今年1岁，他出生了');
+            }
+            else if (j == num) {
+                console.log('这个人今年' + j + '岁，他死了');
+            }
+            else {
+                console.log('这个人今年' + j + '岁');
+            }
+        }
+
+        // 重复执行计算操作，例如求1~100的累加和
+        var sum = 0;
+        for (var k = 1; k <= 100; k++) {
+            sum += k;
+        }
+        console.log(sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

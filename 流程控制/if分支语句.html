@@ -8,13 +8,11 @@
     <script>
         // 如果判断条件为真,则执行打括号内的代码;否则就什么也不做执行其他代码
 
-        // 能被4整除且不能整除100的是闰年,或者能被400整除的是闰年
-        var year = prompt('请输入判断年份');
-        console.log(year);
-        console.log(typeof year);
-        if (typeof year != Number ) {
+        var year = parseInt(prompt('请输入判断年份'));
+        if (!year) {
             alert('输入格式有误');
         }
+        // 能被4整除且不能整除100的是闰年,或者能被400整除的是闰年
          else if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             alert(year + '年是闰年');
         }  else {
