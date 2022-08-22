@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 声明函数的小括号中是形参，调用函数的小括号中是实参
+        function cook(aru) {
+            console.log(aru);
+        }
+
+        cook('香辣土豆丝');
+        cook('番茄炒鸡蛋');
+
+        // 函数形参和实参个数匹配问题
+        function getSum(num1, num2) {
+            console.log(num1 + num2);
+        }
+        // 个数一致正常输出结果
+        getSum(1, 2);   // 3
+        // 实参比形参多，取到形参的个数
+        getSum(1, 2, 3);    // 3
+        // 实参比形参少，多出的形参没有接受值，被定义成undefined
+        getSum(1);  // NaN
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

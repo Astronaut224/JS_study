@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.fn1 = function() {}
+        }
+
+        var pink = new Person('pink老师', 18, '男');
+        
+        // for (变量 in 对象)
+        for (var key in pink) {
+            console.log(key); // 变量输出的是属性名或方法名
+            console.log(pink[key]);   // 对象[变量]输出的是值
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

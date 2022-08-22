@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // js的执行：预解析 代码执行
+        // （1）js引擎会将所有的var和function提到当前作用域的最前面（是把变量和函数的声明提到最前面，不赋值和调用函数）
+        // （2）代码执行，按顺序从上往下执行代码
+        
+        console.log(num);   // undefined
+        var num = 10;
+        // 相当于先声明，输出后，再赋值
+        // var num;
+        // console.log(num);
+        // num = 10;
+
+        // 报错：fun is not a function
+        fun();
+        var fun = function() {
+            console.log(22);
+        }
+        // 相当于先声明一个变量，变量不是函数
+        // var fun;
+        // fun();
+        // fun = function() {
+        //     console.log(22);
+        // }
+        // 函数表达式调用要写在声明下面
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

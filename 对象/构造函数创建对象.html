@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 优化多个对象中重复的代码,可以把对象中一些相同的属性和方法封装到函数里(构造函数)
+        // 构造函数语法:
+        // function 构造函数名() {
+        //     this.属性 = 值;
+        //     this.方法 = function() {}
+        // }
+
+        function Star(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(song) {
+                console.log(song);
+            }
+        }
+        var xs = new Star('许嵩', '20', '男');
+        console.log(xs.name);
+        console.log(xs['age']);
+        xs.sing('雅俗共赏');
+
+        // 1. 构造函数名首字母必须大写
+        // 2. 构造函数不需要return就可以返回结果
+        // 3. 调用构造函数必须使用new
+        // 4. 构造函数属性和方法前面必须加this.
+
+        // new关键字执行过程
+        // 1. new创建一个空对象
+        // 2. this指向这个空对象
+        // 3. 往空对象里添加属性和方法
+        // 4. 返回这个对象
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
