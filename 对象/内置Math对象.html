@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. PI、max最大值、min最小值
+        console.log(Math.PI);   //3.1415926
+        console.log(Math.max(1, 99, 3));    // 99
+        console.log(Math.max(1, 2, 'hello'));   // NaN
+        console.log(Math.max());    // -infinity
+
+        // 2. 绝对值方法
+        console.log(Math.abs(-1));  // 1
+        console.log(Math.abs('-1'));    // 隐式转换，把字符串型转换成数字型
+        console.log(Math.abs('pink'));  // NaN
+
+        // 3. 取整方法
+        // 向下取整floor，往小了取
+        console.log(Math.floor(1.1));   // 1
+        console.log(Math.floor(1.9));   // 1
+        // 向上取整ceil，往大了取
+        console.log(Math.ceil(1.1));    // 2
+        console.log(Math.ceil(1.9));    // 2
+        // 四舍五入round
+        console.log(Math.round(1.3));   // 1
+        console.log(Math.round(1.5));   // 2
+        console.log(Math.round(1.9));   // 2
+        console.log(Math.round(-1.3));   // -1
+        console.log(Math.round(-1.5));   // 这是-1，负数里.5比较特殊
+        console.log(Math.round(-1.9));   // -2
+
+        // 4. 随机数方法random     返回一个随机的浮点数 0 <= x < 1
+        console.log(Math.random());
+        // 要取两个数之间的随机整数，并且包含这两个数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        console.log(getRandom(1,10));
+        // 随机点名
+        var arr = ['张三', '李四', '王五', '小明', '小红'];
+        console.log(arr[getRandom(0, arr.length - 1)]);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

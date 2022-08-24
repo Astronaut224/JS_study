@@ -7,6 +7,13 @@
     <title>Document</title>
     <script>
         var arr = ['red', 'green', 'blue', 'pink'];
+        // 1. toString() 将数组转换成字符串，默认用逗号分隔元素
+        console.log(arr.toString());
+        // 2. join(分隔符) 
+        console.log(arr.join());    // 默认还是用逗号分隔
+        console.log(arr.join('-'));
+
+        // 3. + 隐式转换
         var str = '';
         var sep = '|';
         for (var i = 0; i < arr.length; i++) {

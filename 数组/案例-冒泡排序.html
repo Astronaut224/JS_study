@@ -19,6 +19,21 @@
             }
         }
         console.log(arr);
+
+        // sort()方法排序
+        var arr1 = [1, 3, 13, 6, 9, 38];
+        console.log(arr1.sort());   // 对两位数进行排序会出现问题
+        arr1.sort(function(a,b) {
+            return a - b;  // 升序排列
+        });
+        console.log(arr1);
+
+        // arr1.sort(function(a,b) {
+        //     return b - a;  // 降序排列
+        // });
+        // console.log(arr1);
+
+
     </script>
 </head>
 <body>

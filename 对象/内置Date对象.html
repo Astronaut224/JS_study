@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Date对象是一个构造函数，必须使用new来创建对象实例
+        // 1. 没有参数，返回系统当前时间
+        var date1 = new Date();
+        console.log(date1);
+        // 2. 参数的常见写法：数字型 2022, 8, 23 或是 字符串型 '2022-08-23 8:8:8'
+        var date2 = new Date(2022, 8, 23);  // 由于getMonth获取月份是0~11，所以数字8实际上返回9月
+        console.log(date2);
+        var date3 = new Date('2022-08-23 8:8:8');
+        console.log(date3);
+
+        // 方法
+        // 1. 格式化日期
+        console.log(date1.getFullYear());   // 返回年
+        console.log(date1.getMonth());  // 返回月，0~11记得实际返回月份要加1
+        console.log(date1.getDate());   // 返回日
+        console.log(date1.getDay());    // 返回星期，周日0~周六6
+        console.log(date1.getHours());  // 返回时
+        console.log(date1.getMinutes());    // 返回分
+        console.log(date1.getSeconds());    // 返回秒
+
+        // 2. 获取时间戳
+        // （1）通过 valueOf() getTime()
+        var timestamp1 = new Date();
+        console.log(timestamp1.valueOf());
+        console.log(timestamp1.getTime());
+        // （2）简单写法：  +new Date()
+        var timestamp2 = +new Date();
+        console.log(timestamp2);
+        // (3)新增内容
+        console.log(Date.now());
+
+        // 案例-提示当前时间
+        // function getTime() {
+        //     var yearNow = date1.getFullYear();
+        //     var monthNow = date1.getMonth() + 1;
+        //     var dateNow = date1.getDate();
+        //     var hoursNow = date1.getHours();
+        //     hoursNow = hoursNow < 10 ? '0' + hoursNow : hoursNow;
+        //     var minNow = date1.getMinutes();
+        //     minNow = minNow < 10 ? '0' + minNow : minNow;
+        //     var secNow = date1.getSeconds();
+        //     secNow = secNow < 10 ? '0' + secNow : secNow;
+        //     var re = '现在是' + yearNow + '年' + monthNow + '月' + dateNow + '日 ' + hoursNow + ':' + minNow + ':' + secNow;
+        //     return re;
+        // }
+        // console.log(getTime());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

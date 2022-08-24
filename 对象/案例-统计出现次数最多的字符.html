@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 获取字符串里的字符，将字符放到新的对象中，如果对象中没有这个字符就赋值为1，如果有这个字符值就加1
+        var str = 'abhhhkslanciksejlskw';
+        var o = {}; 
+        var ch;
+        for(var i = 0; i < str.length; i++) {
+            if(o[str.charAt(i)]) {
+                o[str.charAt(i)]++;
+            }
+            else {
+                o[str.charAt(i)] = 1;
+            }
+        }
+        console.log(o);
+
+        // 遍历这个新的对象，找到值最大的
+        var max = 0;
+        var ch;
+        for (var k in o) {
+            if(o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max, ch);
+
+        // 没考虑出现次数最多的字符有多个的情况
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

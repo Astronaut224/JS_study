@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 字符串对象不可变，修改会创建新的内存空间
+        // 字符串也可以用过indexOf查找位置
+        var str = '改革春风吹满地';
+        console.log(str.indexOf('春'));
+        console.log(str.indexOf('春',3));   // 从第三个往后查找，找不到'春'，返回-1
+
+
+        var myname = 'andy';
+        // 返回相应索引号字符对应的字符
+        console.log(myname.charAt(0));
+        // 返回相应索引号字符对应的ASCII码 目的：判断用户按了哪个键
+        console.log(myname.charCodeAt(0));  // 输出第一个字符'a'的ASCII码97
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
